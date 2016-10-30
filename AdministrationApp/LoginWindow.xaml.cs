@@ -36,6 +36,8 @@ namespace AdministrationApp
 
             username = textBoxUsername.Text.ToString();
             password = passwordBox.Password.ToString();
+
+            //Hashing...
         }
     }
 }
