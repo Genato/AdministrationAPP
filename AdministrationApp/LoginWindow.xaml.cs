@@ -30,15 +30,12 @@ namespace AdministrationApp
             Application.Current.Shutdown();
         }
 
-        //private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
-        //{
-        //    if (licence.waitSem)
-        //        licence.ReleaseSemaphore();
-        //}
-
         private void button1Login_Click(object sender, RoutedEventArgs e)
         {
+            String username, password;
 
+            username = textBoxUsername.Text.ToString();
+            password = passwordBox.Password.ToString();
         }
     }
 }
