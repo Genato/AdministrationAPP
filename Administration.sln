@@ -7,10 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdministrationApp", "AdministrationApp\AdministrationApp.csproj", "{4C73C123-E895-4A7F-81E6-B664A0E22020}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helpers", "Helpers", "{04A26F87-AC01-4603-B4CA-E475E9B394DA}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelperLibrary", "HelperLibrary\HelperLibrary.csproj", "{4C138A56-4003-4B2A-A12E-308FD99AF8C0}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,16 +17,11 @@ Global
 		{4C73C123-E895-4A7F-81E6-B664A0E22020}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C73C123-E895-4A7F-81E6-B664A0E22020}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C73C123-E895-4A7F-81E6-B664A0E22020}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4C138A56-4003-4B2A-A12E-308FD99AF8C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4C138A56-4003-4B2A-A12E-308FD99AF8C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4C138A56-4003-4B2A-A12E-308FD99AF8C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4C138A56-4003-4B2A-A12E-308FD99AF8C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{4C73C123-E895-4A7F-81E6-B664A0E22020} = {1AE699F6-D2B3-4F86-9197-1D179CB66C58}
-		{4C138A56-4003-4B2A-A12E-308FD99AF8C0} = {04A26F87-AC01-4603-B4CA-E475E9B394DA}
 	EndGlobalSection
 EndGlobal

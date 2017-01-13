@@ -96,12 +96,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\HelperLibrary\HelperLibrary.csproj">
-      <Project>{4c138a56-4003-4b2a-a12e-308fd99af8c0}</Project>
-      <Name>HelperLibrary</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
