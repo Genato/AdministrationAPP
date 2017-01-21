@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace AdministrationApp
+namespace AdministrationApp.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -22,11 +22,13 @@ namespace AdministrationApp
     {
         public LoginWindow()
         {
+            this.DataContext = this;
             InitializeComponent();
         }
 
         private void buttonExit_Click(object sender, RoutedEventArgs e)
         {
+            this.DialogResult = true;
             Application.Current.Shutdown();
         }
 
@@ -37,6 +39,7 @@ namespace AdministrationApp
             username = textBoxUsername.Text.ToString();
             password = passwordBox.Password.ToString();
 
+            this.DialogResult = false;
             //Hashing...
         }
     }

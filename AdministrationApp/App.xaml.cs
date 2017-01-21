@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using AdministrationApp.Licence;
-
+using AdministrationApp.Views;
 
 
 namespace AdministrationApp
@@ -23,8 +23,9 @@ namespace AdministrationApp
             if (!licence.AddOneSession())
             {
                 licence.MaxNumberOfLicence();
+                Application.Current.Shutdown();
                 return;
-            }            
+            }
         }
 
         ~App()
@@ -32,7 +33,5 @@ namespace AdministrationApp
             if (licence.waitSem)
                 licence.ReleaseSemaphore();
         }
-
-
     }
 }
