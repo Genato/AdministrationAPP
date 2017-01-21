@@ -57,7 +57,6 @@ namespace AdministrationApp.Licence
         public void MaxNumberOfLicence()
         {
             MessageBox.Show("Maximum number of licence is allready used.\nPlease try again later!", "Licence", MessageBoxButton.OK, MessageBoxImage.Information);
-            Application.Current.Shutdown();
         }
     }
 }
