@@ -21,14 +21,6 @@ namespace AdministrationApp.Views
     {
         public MainModule()
         {
-            //bool userLogin = false;
-
-            //while (userLogin != true)
-            //{
-            //    LoginWindow loginWnd = new LoginWindow();
-            //    userLogin = loginWnd.ShowDialog().Value;
-            //}
-
             this.DataContext = new AdministrationApp.ViewModel.LoginViewModel();
 
             InitializeComponent();
