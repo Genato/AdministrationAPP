@@ -6,7 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace AdministrationApp.Licence
+namespace AdministrationApp.HelperClasses
 {
     /// <summary>
     /// Class for checking how many application session has been started. 
