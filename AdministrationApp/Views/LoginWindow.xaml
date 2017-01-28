@@ -16,7 +16,10 @@
         </StackPanel.Background>
 
         <StackPanel Name="ExitPanel" HorizontalAlignment="Left" Height="25" Margin="263,0,0,20" Width="25">
-            <Button x:Name="buttonExit" Height="25" Width="25" Content="X" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Background="#FF2E8DFF" FontFamily="Arial Black" FontSize="20" FontWeight="Bold" Foreground="#FF815858" HorizontalAlignment="Left" />
+            <Button x:Name="buttonExit" Height="25" Width="25" Content="X" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
+                    Command="{Binding ExitButton}" CommandParameter="ExitApplication"
+                    Background="#FF2E8DFF" FontFamily="Arial Black" FontSize="20" FontWeight="Bold" 
+                    Foreground="#FF815858" HorizontalAlignment="Right" />
         </StackPanel>
 
         <StackPanel Name="UserCredentialsPanel" Height="125" Margin="29,0,29,0">
@@ -54,7 +57,7 @@
         <StackPanel Name="LoginButtonPanel" HorizontalAlignment="Left" Height="21" Margin="165,0,0,0" Width="93" Background="#FF0023FF">
             <Button x:Name="button1Login" Content="Login"  Height="21" Width="93" FontFamily="Arial" FontSize="14" 
                     Foreground="#FF1B98FF" BorderThickness="0.5,0.5,0.5,0.5" BorderBrush="#FF0023FF" FontWeight="Bold" 
-                    Command="{Binding CheckCredentials}" CommandParameter="{Binding ElementName=passwordBox}">
+                    Command="{Binding LoginButton}" CommandParameter="{Binding ElementName=passwordBox}">
                 <Button.Background>
                     <RadialGradientBrush>
                         <GradientStop Color="#FF834C4C" Offset="1"/>

@@ -78,7 +78,9 @@
     <Compile Include="HelperClasses\Hashing.cs" />
     <Compile Include="HelperClasses\LicenceChecker.cs" />
     <Compile Include="Models\LoginUserModel.cs" />
-    <Compile Include="ViewModels\LoginViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel\LoginButtonCommand.cs" />
+    <Compile Include="ViewModels\LoginViewModel\LoginViewModel.cs" />
+    <Compile Include="ViewModels\LoginViewModel\ShutdownApplication.cs" />
     <Compile Include="ViewModels\MainModuleViewModel.cs" />
     <Compile Include="Views\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
