@@ -16,31 +16,14 @@ using System.Windows.Shapes;
 namespace AdministrationApp.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for LoginWindow.xaml
     /// </summary>
     public partial class LoginWindow : Window
     {
         public LoginWindow()
         {
-            this.DataContext = this;
+            this.DataContext = new ViewModels.LoginViewModel(this);
             InitializeComponent();
-        }
-
-        private void buttonExit_Click(object sender, RoutedEventArgs e)
-        {
-            this.DialogResult = true;
-            Application.Current.Shutdown();
-        }
-
-        private void button1Login_Click(object sender, RoutedEventArgs e)
-        {
-            String username, password;
-
-            username = textBoxUsername.Text.ToString();
-            password = passwordBox.Password.ToString();
-
-            this.DialogResult = false;
-            //Hashing...
         }
     }
 }
