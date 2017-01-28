@@ -5,9 +5,7 @@ using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
-using AdministrationApp.Licence;
-using AdministrationApp.Views;
-
+using AdministrationApp.HelperClasses;
 
 namespace AdministrationApp
 {
