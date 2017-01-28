@@ -1,5 +1,6 @@
 ﻿using System.Windows;
 using AdministrationApp.ViewModels.LoginViewModel;
+using AdministrationApp.ViewModels.MainModuleVM;
 
 namespace AdministrationApp.Views
 {
@@ -8,9 +9,9 @@ namespace AdministrationApp.Views
     /// </summary>
     public partial class LoginWindow : Window
     {
-        public LoginWindow()
+        public LoginWindow(MainModule mainModule)
         {
-            this.DataContext = new LoginViewModel(this);
+            this.DataContext = new LoginViewModel(mainModule, this);
             InitializeComponent();
         }
     }

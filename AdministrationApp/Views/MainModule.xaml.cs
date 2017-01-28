@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AdministrationApp.ViewModels.MainModuleVM;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,7 +22,7 @@ namespace AdministrationApp.Views
     {
         public MainModule()
         {
-            this.DataContext = new AdministrationApp.ViewModels.MainModuleViewModel();
+            this.DataContext = new MainModuleViewModel(this);
             InitializeComponent();
         }
     }

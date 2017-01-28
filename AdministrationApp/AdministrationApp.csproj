@@ -81,7 +81,7 @@
     <Compile Include="ViewModels\LoginViewModel\LoginButtonCommand.cs" />
     <Compile Include="ViewModels\LoginViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModels\LoginViewModel\ShutdownApplication.cs" />
-    <Compile Include="ViewModels\MainModuleViewModel.cs" />
+    <Compile Include="ViewModels\MainModuleViewModel\MainModuleViewModel.cs" />
     <Compile Include="Views\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
       <SubType>Code</SubType>

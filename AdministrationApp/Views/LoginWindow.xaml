@@ -17,7 +17,7 @@
 
         <StackPanel Name="ExitPanel" HorizontalAlignment="Left" Height="25" Margin="263,0,0,20" Width="25">
             <Button x:Name="buttonExit" Height="25" Width="25" Content="X" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"
-                    Command="{Binding ExitButton}" CommandParameter="ExitApplication"
+                    Command="{Binding ExitButton}"
                     Background="#FF2E8DFF" FontFamily="Arial Black" FontSize="20" FontWeight="Bold" 
                     Foreground="#FF815858" HorizontalAlignment="Right" />
         </StackPanel>

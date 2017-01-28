@@ -1,10 +1,9 @@
 ﻿using AdministrationApp.HelperClasses;
 using AdministrationApp.Models;
+using AdministrationApp.Views;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -16,12 +15,14 @@ namespace AdministrationApp.ViewModels.LoginViewModel
     /// </summary>
     internal class LoginButtonCommand : ICommand
     {
-        public LoginButtonCommand(LoginViewModel loginViewModel)
+        public LoginButtonCommand(MainModule mainModule, LoginViewModel loginViewModel)
         {
+            this.mainModule = mainModule;
             this.loginViewModel = loginViewModel;
         }
 
         private LoginViewModel loginViewModel;
+        private MainModule mainModule;
 
         // ICommand region
         #region Icommand region
@@ -41,12 +42,15 @@ namespace AdministrationApp.ViewModels.LoginViewModel
 
             if (query.Count() != 0 && (query.First().PasswordHash == hash.Hash(_sender.Password.ToString())))
             {
-                loginViewModel.LoginWindow.DialogResult = true;
+                MessageBox.Show("Login successfully!", "", MessageBoxButton.OK, MessageBoxImage.Information);
+                this.mainModule.Visibility = System.Windows.Visibility.Visible;
+                this.loginViewModel.LoginWindow.Close();
                 return;
             }
 
-            MessageBox.Show("UserName does not exist!", "Failed to login", MessageBoxButton.OK, MessageBoxImage.Asterisk);
-            this.loginViewModel.LoginWindow.DialogResult = false;
+            MessageBox.Show("Wrong credentials!", "Failed to login", MessageBoxButton.OK, MessageBoxImage.Asterisk);
+            this.loginViewModel.LoginUser.UserName = "";
+            this.loginViewModel.LoginUser.PasswordHash = "";
         }
         #endregion
     }

@@ -1,5 +1,6 @@
 ﻿using AdministrationApp.Models;
 using AdministrationApp.Views;
+using AdministrationApp.ViewModels.MainModuleVM;
 using AdministrationApp.HelperClasses;
 using System;
 using System.Collections;
@@ -19,11 +20,11 @@ namespace AdministrationApp.ViewModels.LoginViewModel
     /// </summary>
     public partial class LoginViewModel
     {
-        public LoginViewModel(LoginWindow loginWindow)
+        public LoginViewModel(MainModule mainModule, LoginWindow loginWindow)
         {
             this.loginWindow = loginWindow;
             this.user = new LoginUserModel();
-            LoginButton = new LoginButtonCommand(this);
+            LoginButton = new LoginButtonCommand(mainModule, this);
             ExitButton = new ShutdownApplication(this);
         }
 
