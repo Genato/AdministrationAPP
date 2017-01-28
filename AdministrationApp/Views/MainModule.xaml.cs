@@ -21,8 +21,7 @@ namespace AdministrationApp.Views
     {
         public MainModule()
         {
-            this.DataContext = new AdministrationApp.ViewModel.LoginViewModel();
-
+            this.DataContext = new AdministrationApp.ViewModels.MainModuleViewModel();
             InitializeComponent();
         }
     }
