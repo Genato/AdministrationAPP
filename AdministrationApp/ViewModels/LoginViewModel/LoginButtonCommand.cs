@@ -50,7 +50,7 @@ namespace AdministrationApp.ViewModels.LoginViewModel
 
             MessageBox.Show("Wrong credentials!", "Failed to login", MessageBoxButton.OK, MessageBoxImage.Asterisk);
             this.loginViewModel.LoginUser.UserName = "";
-            this.loginViewModel.LoginUser.PasswordHash = "";
+            this.loginViewModel.LoginWindow.passwordBox.Password= "";
         }
         #endregion
     }
